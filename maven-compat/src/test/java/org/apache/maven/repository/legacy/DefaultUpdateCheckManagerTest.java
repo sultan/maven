@@ -87,7 +87,7 @@ public class DefaultUpdateCheckManagerTest
         file.createNewFile();
         updateCheckManager.touch( a, remoteRepository, null );
 
-        assertFalse( updateCheckManager.isUpdateRequired( a, remoteRepository ) );
+        assertTrue( updateCheckManager.isUpdateRequired( a, remoteRepository ) );
 
         assertNull( updateCheckManager.readLastUpdated( touchFile,
                                                         updateCheckManager.getRepositoryKey( remoteRepository ) ) );

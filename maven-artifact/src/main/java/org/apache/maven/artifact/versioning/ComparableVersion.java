@@ -657,7 +657,7 @@ public class ComparableVersion
                 }
                 startIndex = i + 1;
             }
-            else if ( c == '-' )
+            else if ( c == '-' || c == '+' )
             {
                 if ( i == startIndex )
                 {
